@@ -11,7 +11,7 @@ var express = require("express"),
 
 
 //*******  Reading css filenames *******//
-var filenames = utility.getFiles(config.directory, ".css");
+var filenames = utility.getFiles(config.cssFileDirectory, ".css");
 
 if(filenames && filenames.length==0){
   console.log("No CSS file found in the directory specified. Please change the directory which contains some css file and restart the server.");

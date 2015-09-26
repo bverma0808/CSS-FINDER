@@ -1,0 +1,61 @@
+/**
+ * Paste some code here and explore the syntax tree
+ * created by https://github.com/reworkcss/css. Enjoy!
+ */
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: red;
+  font-size: 18px;
+}
+
+p {
+  color: purple !important;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background: green;
+    font-size: 21px;
+  }
+}
+
+
+.my,li > a{
+  color:red;
+  font-size:10px;
+}
+
+.abc{
+  color:blue;
+}
+
+.a{
+  color: red;
+  font-size: 5px;
+}  
+
+.b{
+  padding:10px;
+}  
+
+.c{
+  color:red;
+} 
+
+.d{
+  padding:10px;
+  color:red;
+} 
+.e{
+  font:5px;
+} 
+
+.f{
+  color:5px;
+  margin:10px;
+}
