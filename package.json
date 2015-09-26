@@ -1,0 +1,23 @@
+{
+  "name": "css-finder",
+  "version": "1.0.0",
+  "description": "Reuse your existing CSS classes efficiently and smartly",
+  "main": "expressServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bverma0808/CSS-FINDER.git"
+  },
+  "author": "Bharat Verma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bverma0808/CSS-FINDER/issues"
+  },
+  "homepage": "https://github.com/bverma0808/CSS-FINDER#readme",
+  "dependencies": {
+    "css": "^2.2.1",
+    "express": "^4.13.3"
+  }
+}

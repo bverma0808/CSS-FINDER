@@ -1,0 +1,55 @@
+<html ng-app="cssMatcherApp" ng-controller="CssController">
+<head>
+    <title>Match CSS</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-route.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="client.js"></script>
+</head>
+
+<body>
+
+<div class="container" ng-init="initObjects()">
+
+    <h1>CSS-FINDER</h1>
+
+    <div>
+        
+        <div style="margin-bottom: 10px;">
+            <textarea cols="70" rows="5" class="form-control" placeholder="Paste your css code here..." data-ng-model="cssStyleText"></textarea>
+        </div>
+
+
+        <div style="margin-bottom: 10px;">
+            <input type="button" class="btn btn-primary" ng-disabled="cssStyleText.length==0" value="FIND CSS CLASSES" ng-click="findCssMatch()">
+
+        </div>
+
+
+        <div class="padding-top:40px;">
+
+            <table ng-show="sortedSimilarClassesArr && sortedSimilarClassesArr.length > 0" class="table table-striped">
+                <tr>
+                    <th>Class Name</th>
+                    <th>Score out of {{cssStyleArr.length}}</th>
+                    <th>Definition</th>
+                </tr>
+                <tr ng-repeat="classMatched in sortedSimilarClassesArr | orderBy:'-weightage'">
+                    <td>{{classMatched.className}}</td>
+                    <td>{{classMatched.weightage}}</td>
+                    <td>{{classMatched.classDefinition.split(";").join("; ")}}</td>
+                </tr>
+            </table>
+                
+        </div>
+    </div>
+
+
+</div>
+
+</body>
+
+</html>
