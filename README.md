@@ -1,3 +1,6 @@
+##Prerequisites:
+One must be having Nodejs and npm installed prior to using this app. You can install node easily by following the steps from [here](https://nodejs.org)
+
 ## Steps to get started:
 
 #####Step 1 : Clone the project
