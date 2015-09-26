@@ -15,3 +15,6 @@ You need to change the value of "cssFileDirectory" property in file CSS_FINDER_H
 #####Step 1 : You need to change the value of "serverPort" property in file CSS_FINDER_HOME/config.json
    
 #####Step 2 : Change the "hostName" property in CSS_FINDER_HOME/client.js file according to the "serverPort" property value of CSS_FINDER_HOME/config.json file.
+
+
+See wiki pages to know more about the application
