@@ -1,3 +1,5 @@
+// This is application's main file which contains the code to start the server
+
 //************* Dependencies *****************//
 var express = require("express"),
     app = express(),
