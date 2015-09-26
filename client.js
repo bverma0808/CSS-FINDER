@@ -21,14 +21,15 @@ cssMatcherApp.factory('ConfigService', [
 cssMatcherApp.controller("CssController", ['$scope','$http','ConfigService',
     function ($scope, $http, ConfigService) {
 
-        $scope.similarClasses = {}
+        $scope.similarClasses = {};
 
-        $scope.cssFileProperties = {}
+        $scope.cssFileProperties = {};
 
-        $scope.cssClassObject = {}
+        $scope.cssClassObject = {};
 
-        $scope.cssStyleText = ""
+        $scope.cssStyleText = "";
 
+        $scope.submitted = false;
         /*
          * Fetch initial objects from server
          * */
@@ -91,7 +92,7 @@ cssMatcherApp.controller("CssController", ['$scope','$http','ConfigService',
          * This method finds the CSS classes which are most relevant to the User's query
          */
         $scope.findCssMatch = function () {
-
+            $scope.submitted = true;
             $scope.similarClasses = {};
             console.log($scope.cssStyleText.length - 1)
             var styleString = $scope.cssStyleText
