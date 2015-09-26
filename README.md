@@ -6,6 +6,11 @@
 
 #####Step 3 : use command 'node cssfinder.js' to start the server and browse to "http://localhost:8081/"
 
+#####Step 4 : On home page you will see a textarea which prompts you to "Paste your css code here" . The css code examples are as follows : 
+ex-1:=>  color:red;
+ex-2:=>  width:5px;border:1px solid;
+etc. Thus you can easily see its nothing but a normal css code which we write inside a html tag's style attribute.
+
 By default the application tries to load the css files from its home directory (CSS_FINDER_HOME), So to load the CSS files from a different directory you need to follow the following steps:
 
 ####To change the css files directory
